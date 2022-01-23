@@ -1,0 +1,10 @@
+<template>
+    <template for:each={data} for:item="dt">
+        <lightning-layout-item key={dt.Id}>
+            <div data-id={dt.Id} onclick={itemHandler}>
+            ID : {dt.Id}<br>
+            車種 : {dt.Name}
+            </div>
+        </lightning-layout-item>
+    </template>
+</template>

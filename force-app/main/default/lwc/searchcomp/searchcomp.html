@@ -1,0 +1,11 @@
+<template>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-input type="text" label="検索ワード" placeholder="検索ワードを入れてください" onchange={changeKeywordHandler}>></lightning-input>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-slider label="価格" max="500" onchange={changeMinPriceHandler} value={searchCondition.price}></lightning-slider>
+    </div>
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-button variant="brand" label="検索" title="検索実行" onclick={searchClickHandler} ></lightning-button>
+    </div>
+</template>

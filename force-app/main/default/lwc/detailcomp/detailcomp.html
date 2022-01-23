@@ -1,0 +1,13 @@
+<template>
+    <template if:false={data_have}>
+        詳細をみたい車種を選んでね
+    </template>
+    <template if:true={data_have}>
+        <lightning-layout-item>
+            ID : {data.Id}<br>
+            Name : {data.Name}<br>
+            Maker : {data.maker__c}<br>
+            Price : {data.Price__c}
+        </lightning-layout-item>
+    </template>
+</template>
